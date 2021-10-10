@@ -1,4 +1,4 @@
-import { ADD_CONTACTS } from "../action/actionTypes";
+import { ADD_CONTACTS,FILTER_CONTACTS } from "../action/actionTypes";
 
 
 const initialState={
@@ -12,6 +12,12 @@ const initialState={
 export default function rootReducer(state=initialState,action){
     switch(action.type){
         case ADD_CONTACTS:{
+            return{
+                ...state,
+                contacts:action.contacts
+            }
+        }
+        case FILTER_CONTACTS:{
             return{
                 ...state,
                 contacts:action.contacts
