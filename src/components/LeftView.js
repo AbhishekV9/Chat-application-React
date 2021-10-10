@@ -7,12 +7,12 @@ function LeftView(props){
     const {contacts}=props;
     console.log("leftview props",contacts);
     return(
-        <div>
-            <div>
+        <div className="leftsidebar">
+            <div className="personalInfo">
                 <h3>Personal information</h3>
             </div>
-            <div>
-                <h3>Searchbar</h3>
+            <div className="searchbar">
+                <input type="text" placeholder="Search.." name="search" />
             </div>
             <div>
                 {contacts.map((user)=>(
