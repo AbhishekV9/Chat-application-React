@@ -3,6 +3,7 @@ const contacts= [
         userName:"Ashish",
         id:1,
         status:'online',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
         chats:[
             {
                 message:"hi Ashish",
@@ -52,6 +53,7 @@ const contacts= [
         userName:"Preeti",
         id:2,
         status:'offline',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
         chats:[
             {
                 message:"hi Preeti",
@@ -80,12 +82,14 @@ const contacts= [
         userName:"Ayush",
         id:3,
         status:'offline',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
         chats:[]
     },
     {
         userName:"Akansha",
         id:4,
         status:'online',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
         chats:[
             {
                 message:"hi Abhsihek",
@@ -129,18 +133,21 @@ const contacts= [
         userName:"Avinash",
         id:5,
         status:'online',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
         chats:[]
     },
     {
         userName:"Ananya",
         id:6,
         status:'offline',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
         chats:[]
     },
     {
         userName:"Vinod",
         id:7,
         status:'offline',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
         chats:[
             {
                 message:"i will be unable to Attend today's class Abhishek so don't wait for me",
@@ -158,12 +165,14 @@ const contacts= [
         userName:"Kirti",
         id:8,
         status:'online',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
         chats:[]
     },
     {
         userName:"Ritesh",
         id:9,
         status:'offline',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
         chats:[
             {
                 message:"hi Ritesh",
