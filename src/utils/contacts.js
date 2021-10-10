@@ -2,7 +2,7 @@ const contacts= [
     {
         userName:"Ashish",
         id:1,
-        status:online,
+        status:'online',
         chats:[
             {
                 message:"hi Ashish",
@@ -35,7 +35,7 @@ const contacts= [
                 timestamps:'12.13 PM'
             },
             {
-                message:"Ok then let's meet today 6.00 PM",
+                 message:"Ok then let's meet today 6.00 PM",
                 sender:'self',
                 timestamps:'12.17 PM'
             },
@@ -51,7 +51,7 @@ const contacts= [
     {
         userName:"Preeti",
         id:2,
-        status:offline,
+        status:'offline',
         chats:[
             {
                 message:"hi Preeti",
@@ -79,13 +79,13 @@ const contacts= [
     {
         userName:"Ayush",
         id:3,
-        status:offline,
+        status:'offline',
         chats:[]
     },
     {
         userName:"Akansha",
         id:4,
-        status:online,
+        status:'online',
         chats:[
             {
                 message:"hi Abhsihek",
@@ -128,19 +128,19 @@ const contacts= [
     {
         userName:"Avinash",
         id:5,
-        status:online,
+        status:'online',
         chats:[]
     },
     {
         userName:"Ananya",
         id:6,
-        status:offline,
+        status:'offline',
         chats:[]
     },
     {
         userName:"Vinod",
         id:7,
-        status:offline,
+        status:'offline',
         chats:[
             {
                 message:"i will be unable to Attend today's class Abhishek so don't wait for me",
@@ -157,13 +157,13 @@ const contacts= [
     {
         userName:"Kirti",
         id:8,
-        status:online,
+        status:'online',
         chats:[]
     },
     {
         userName:"Ritesh",
         id:9,
-        status:offline,
+        status:'offline',
         chats:[
             {
                 message:"hi Ritesh",
