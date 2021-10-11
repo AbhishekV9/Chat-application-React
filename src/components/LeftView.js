@@ -27,10 +27,15 @@ import {filter} from '../action';
     return(
         <div className="leftsidebar">
             <div className="personalInfo">
-                <h3>Personal information</h3>
+                 <span  className="logInuser"> <img src= {props.loggedInUser.img} /></span>
+                <span className="logInuser" >{props.loggedInUser.name}</span>
+                <span className="logInuser phone" >{props.loggedInUser.phoneNo}</span>
             </div>
             <div className="searchbar">
-                <input type="text" placeholder="Search.." name="search" onChange={handleChange}/>
+                <input type="text" placeholder="Search.. " name="search" onChange={handleChange}/>
+                <span  className="icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/751/751463.png" alt="search" />
+                </span>
             </div>
             <div className="scroll">
                 {contacts.length <9 ? contacts.map((user=>{
