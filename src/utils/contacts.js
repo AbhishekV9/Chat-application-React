@@ -3,7 +3,7 @@ const contacts= [
         userName:"Ashish",
         id:1,
         status:'online',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1528763380143-65b3ac89a3ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=389&q=80",
         chats:[
             {
                 message:"hi Ashish",
@@ -53,7 +53,7 @@ const contacts= [
         userName:"Preeti",
         id:2,
         status:'offline',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
         chats:[
             {
                 message:"hi Preeti",
@@ -82,14 +82,14 @@ const contacts= [
         userName:"Ayush",
         id:3,
         status:'offline',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80",
         chats:[]
     },
     {
         userName:"Akansha",
         id:4,
         status:'online',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1558898479-33c0057a5d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         chats:[
             {
                 message:"hi Abhsihek",
@@ -133,21 +133,21 @@ const contacts= [
         userName:"Avinash",
         id:5,
         status:'online',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1467&q=80",
         chats:[]
     },
     {
         userName:"Ananya",
         id:6,
         status:'offline',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1569913486515-b74bf7751574?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80",
         chats:[]
     },
     {
         userName:"Vinod",
         id:7,
         status:'offline',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
         chats:[
             {
                 message:"i will be unable to Attend today's class Abhishek so don't wait for me",
@@ -155,7 +155,7 @@ const contacts= [
                 timestamps:"08.00 AM"
             },
             {
-                message:"Ok will meet you after coaching",
+                message:"Ok will meet you after coaching and give you the notes of today's class.",
                 sender:'self',
                 timestamps:"08.05 AM"
             }
@@ -165,14 +165,14 @@ const contacts= [
         userName:"Kirti",
         id:8,
         status:'online',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1558439749-b53250f4ffb6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=327&q=80",
         chats:[]
     },
     {
         userName:"Ritesh",
         id:9,
         status:'offline',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1623582854588-d60de57fa33f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
         chats:[
             {
                 message:"hi Ritesh",
@@ -230,7 +230,7 @@ const contacts= [
         userName:"Rajat",
         id:11,
         status:'offline',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1626038135427-bd4eb8193ba5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
         chats:[
             {
                 message:"hi Rajat",
@@ -259,7 +259,7 @@ const contacts= [
         userName:"Manik",
         id:12,
         status:'offline',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1599566147214-ce487862ea4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=347&q=80",
         chats:[
             {
                 message:"hi Manik",
@@ -288,7 +288,7 @@ const contacts= [
         userName:"Nikita",
         id:13,
         status:'offline',
-        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        photo:"https://images.unsplash.com/photo-1568822617270-2c1579f8dfe2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80",
         chats:[
             {
                 message:"hi Nikita",
