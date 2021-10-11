@@ -34,6 +34,7 @@ import {filter} from '../action';
     },[searchbar]);
 
     const {contacts}=props;
+    console.log(contacts.length);
     return(
         <div className="leftsidebar">
             <div className="personalInfo">
@@ -43,7 +44,10 @@ import {filter} from '../action';
                 <input type="text" placeholder="Search.." name="search" onChange={handleChange}/>
             </div>
             <div>
-                {contacts.map((user)=>(
+                {contacts.length <9 ? contacts.map((user=>{
+                    return <UserCard user={user} key={ user.id} />
+                })):
+                contacts.map((user)=>(
                     user.chats.length >0 ? <UserCard user={user} key={user.id} /> : null   
                 ))}
             </div>
