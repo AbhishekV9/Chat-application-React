@@ -7,12 +7,14 @@ import {filter} from '../action';
 
  function LeftView(props){
     const [searchbar , setValue]=useState("");
-    const {dispatch}=props;
+    
+    const {dispatch,setConvo}=props;
     const handleChange=  (e) =>{
         const newValue=e.target.value
         setValue(newValue);
     }
-
+    
+   
 
     useEffect(()=>{
         const filteredContacts= Contacts.filter((contact)=>{
@@ -23,6 +25,11 @@ import {filter} from '../action';
         dispatch(filter(filteredContacts));
     },[searchbar,dispatch]);
 
+    const changeShowConvo = (e) =>{
+        console.log('hiiiiii');
+        setConvo(true);
+    }
+    
     const {contacts}=props;
     return(
         <div className="leftsidebar">
@@ -33,7 +40,7 @@ import {filter} from '../action';
             </div>
             <div className="searchbar">
                 <input type="text" placeholder="   Search.. " name="search" onChange={handleChange}/>
-                <span  className="icon">
+                <span  className="icon" >
                     <img src="https://cdn-icons-png.flaticon.com/512/751/751463.png" alt="search" />
                 </span>
                 <div className="add-convo">
@@ -41,7 +48,7 @@ import {filter} from '../action';
                          Create Conversation
                     </span>
                     <span className="add-img">
-                        <img src= "https://cdn-icons.flaticon.com/png/512/863/premium/863823.png?token=exp=1633960669~hmac=50fa37db1705b19d07a84546b7b68abc" alt="add"/>
+                        <img src= "https://cdn-icons.flaticon.com/png/512/863/premium/863823.png?token=exp=1633960669~hmac=50fa37db1705b19d07a84546b7b68abc" onClick={changeShowConvo} alt="add"/>
                     </span>
                 </div>
             </div>
@@ -53,6 +60,7 @@ import {filter} from '../action';
                     user.chats.length >0 ? <UserCard user={user} key={user.id} /> : null   
                 ))}
             </div>
+           
         </div>
     )
 }

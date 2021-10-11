@@ -157,3 +157,36 @@ img{
 .add-img{
   margin-left:10px;
 }
+
+.showContacts{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border:1px solid darkslategray;
+  height:500px;
+  width:400px;
+}
+
+.allheader{
+  background-color: orange;
+  color:black;
+  height:50px;
+  border-bottom: 1px solid darkslategray ;
+  display: flex;
+  justify-content: space-between;
+}
+.closeimg{
+  margin-top:10px;
+  margin-right: 3px;
+}
+.closeimg img{
+  height:30px;
+  width: 30px;
+}
+
+.showheader{
+  font-size: x-large;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-left: 15px;
+}

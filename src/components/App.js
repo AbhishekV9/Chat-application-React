@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import '../stylesheets/App.css';
 import contacts from '../utils/contacts';
@@ -10,6 +10,7 @@ import LeftView from './LeftView';
 import RightView from './RightView';
 
 function App(props) {
+  const [showConvo,setConvo] = useState(false);
   const {dispatch}=props;
 
   useEffect(()=>{
@@ -19,10 +20,10 @@ function App(props) {
   return (
     <div className="flex">
         <div className="w-30">
-          <LeftView />
+          <LeftView showConvo={showConvo} setConvo={setConvo}/>
         </div>
         <div className="w-70">
-          <RightView />
+          <RightView showConvo={showConvo} setConvo={setConvo} />
         </div>
     </div>
   );
