@@ -163,20 +163,20 @@ img{
   margin-right: auto;
   margin-top: 50px;
   border:1px solid darkslategray;
-  height:500px;
+  height:478px;
   width:400px;
 }
 
 .allheader{
   background-color: orange;
   color:black;
-  height:50px;
-  border-bottom: 1px solid darkslategray ;
+  height:55px;
+  
   display: flex;
   justify-content: space-between;
 }
 .closeimg{
-  margin-top:10px;
+  margin-top:14px;
   margin-right: 3px;
 }
 .closeimg img{
@@ -185,8 +185,13 @@ img{
 }
 
 .showheader{
-  font-size: x-large;
-  font-weight: 500;
+  font-size: xx-large;
+  font-weight: 300;
   margin-top: 5px;
   margin-left: 15px;
+}
+
+.allconctacs{
+  height: 420px;
+  overflow: auto;
 }
