@@ -11,8 +11,9 @@ function userCard(props){
                 </div>
             </div>
             <div className="w-80 p">
-                <div className="username">
-                    {user.userName}
+                <div className="userdetails" >
+                    <span className="username"> {user.userName} </span>
+                    <span className="time">{length!==-1 ? user.chats[length].timestamps : null }</span>
                 </div>   
                 <span className="message">
                     {length=== -1 ? null : 

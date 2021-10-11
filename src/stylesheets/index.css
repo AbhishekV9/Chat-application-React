@@ -94,3 +94,18 @@ img{
 .personalInfo{
   height:60px;
 }
+
+.scroll{
+  overflow: auto;
+  height:490px;
+}
+
+.userdetails{
+  display: flex;
+  justify-content: space-between;
+}
+
+.time{
+  color:black;
+  font:14px 'segoe UI' !important;
+}

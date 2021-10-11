@@ -196,6 +196,122 @@ const contacts= [
             }
         ]
 
+    },
+    {
+        userName:"Vishnupriya",
+        id:10,
+        status:'offline',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        chats:[
+            {
+                message:"hi Vishnupriya",
+                sender:'self',
+                timestamps:'01.00 PM'
+            },
+            {
+                message:"hi Abhsihek",
+                sender:'user',
+                timestamps:'01.02 PM'
+            },
+            {
+                message:"how are you??",
+                sender:'self',
+                timestamps:'01.03 PM'
+            },
+            {
+                message:"m fine wat abt u ??",
+                sender:'user',
+                timestamps:'01.05 PM'
+            }
+        ]
+
+    },
+    {
+        userName:"Rajat",
+        id:11,
+        status:'offline',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        chats:[
+            {
+                message:"hi Rajat",
+                sender:'self',
+                timestamps:'01.00 PM'
+            },
+            {
+                message:"hi Abhsihek",
+                sender:'user',
+                timestamps:'01.02 PM'
+            },
+            {
+                message:"how are you??",
+                sender:'self',
+                timestamps:'01.03 PM'
+            },
+            {
+                message:"m fine wat abt u ??",
+                sender:'user',
+                timestamps:'01.05 PM'
+            }
+        ]
+
+    },
+    {
+        userName:"Manik",
+        id:12,
+        status:'offline',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        chats:[
+            {
+                message:"hi Manik",
+                sender:'self',
+                timestamps:'01.00 PM'
+            },
+            {
+                message:"hi Abhsihek",
+                sender:'user',
+                timestamps:'01.02 PM'
+            },
+            {
+                message:"how are you??",
+                sender:'self',
+                timestamps:'01.03 PM'
+            },
+            {
+                message:"m fine wat abt u ??",
+                sender:'user',
+                timestamps:'01.05 PM'
+            }
+        ]
+
+    },
+    {
+        userName:"Nikita",
+        id:13,
+        status:'offline',
+        photo:"https://cdn6.f-cdn.com/files/download/38546484/28140e.jpg",
+        chats:[
+            {
+                message:"hi Nikita",
+                sender:'self',
+                timestamps:'01.00 PM'
+            },
+            {
+                message:"hi Abhsihek",
+                sender:'user',
+                timestamps:'01.02 PM'
+            },
+            {
+                message:"how are you??",
+                sender:'self',
+                timestamps:'01.03 PM'
+            },
+            {
+                message:"m fine wat abt u ??",
+                sender:'user',
+                timestamps:'01.05 PM'
+            }
+        ]
+
     }
 ]
 

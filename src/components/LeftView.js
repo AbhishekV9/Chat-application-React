@@ -6,21 +6,11 @@ import Contacts from '../utils/contacts';
 import {filter} from '../action';
 
  function LeftView(props){
-
     const [searchbar , setValue]=useState("");
-
+    const {dispatch}=props;
     const handleChange=  (e) =>{
         const newValue=e.target.value
-         setValue(newValue);
-        // console.log(newValue);
-        // console.log("search",searchbar);
-        // const filteredContacts=await Contacts.filter((contact)=>{
-        //     return contact.userName
-        //     .toLowerCase()
-        //     .includes(searchbar.toLowerCase());
-        // })
-        // console.log("filter",filteredContacts);
-        // await props.dispatch(filter(filteredContacts));
+        setValue(newValue);
     }
 
 
@@ -30,11 +20,10 @@ import {filter} from '../action';
                 .toLowerCase()
                 .includes(searchbar.toLowerCase());
             })
-        props.dispatch(filter(filteredContacts));
-    },[searchbar]);
+        dispatch(filter(filteredContacts));
+    },[searchbar,dispatch]);
 
     const {contacts}=props;
-    console.log(contacts.length);
     return(
         <div className="leftsidebar">
             <div className="personalInfo">
@@ -43,7 +32,7 @@ import {filter} from '../action';
             <div className="searchbar">
                 <input type="text" placeholder="Search.." name="search" onChange={handleChange}/>
             </div>
-            <div>
+            <div className="scroll">
                 {contacts.length <9 ? contacts.map((user=>{
                     return <UserCard user={user} key={ user.id} />
                 })):
