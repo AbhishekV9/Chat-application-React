@@ -5,7 +5,7 @@ function userCard(props){
     const length=user.chats.length-1;
     const link=`/user${user.id}`
     return(
-       <Link to={link}>
+       <Link to={link} style={{ textDecoration: 'none' }} >
             <div className="flex w-100 h-60px userCard p3">
             <div className="w-20 p1">
                 <div className="profile-picture">
