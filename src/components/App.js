@@ -11,10 +11,9 @@ import LeftView from './LeftView';
 import RightView from './RightView';
 
 function App(props) {
-  console.log("pdspdps",props)
   const [showConvo,setConvo] = useState(false);
   const {dispatch,user}=props;
-
+  const user1=contacts[0];
   useEffect(()=>{
     dispatch(addContacts(contacts));
   },[dispatch])
@@ -37,6 +36,20 @@ function App(props) {
                   showConvo={showConvo} 
                   setConvo={setConvo} 
                   user={user}
+                  />
+                );
+              }}            
+            />
+            <Route 
+              path='/user1'
+              exact
+              render={(props)=>{
+                return(
+                  <RightView
+                  {...props}
+                  showConvo={showConvo} 
+                  setConvo={setConvo} 
+                  user={user1}
                   />
                 );
               }}            

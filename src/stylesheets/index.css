@@ -205,5 +205,15 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   border-top:1px solid black;
-  border-bottom:1px solid black; ;
+  border-bottom:1px solid black; 
+}
+
+.otherUsers{
+  background-image: url("http://i.imgur.com/TnNwdvV.png");
+  height: 100vh;
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top:1px solid black;
+  border-bottom:1px solid black; 
 }
