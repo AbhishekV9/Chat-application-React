@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import React, { useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 import '../stylesheets/App.css';
 import contacts from '../utils/contacts';
@@ -10,8 +11,9 @@ import LeftView from './LeftView';
 import RightView from './RightView';
 
 function App(props) {
+  console.log("pdspdps",props)
   const [showConvo,setConvo] = useState(false);
-  const {dispatch}=props;
+  const {dispatch,user}=props;
 
   useEffect(()=>{
     dispatch(addContacts(contacts));
@@ -23,15 +25,32 @@ function App(props) {
           <LeftView showConvo={showConvo} setConvo={setConvo}/>
         </div>
         <div className="w-70">
-          <RightView showConvo={showConvo} setConvo={setConvo} />
-        </div>
+          {/* <RightView showConvo={showConvo} setConvo={setConvo} /> */}
+          <Switch>
+            <Route 
+              path='/'
+              exact
+              render={(props)=>{
+                return(
+                  <RightView
+                  {...props}
+                  showConvo={showConvo} 
+                  setConvo={setConvo} 
+                  user={user}
+                  />
+                );
+              }}            
+            />
+          </Switch>
+        </div>  
     </div>
   );
 }
 
 function mapStatetoprops(state){
   return{
-    contacts:state.contacts
+    contacts:state.contacts,
+    user:state.loggedInUser
   }
 }
 
