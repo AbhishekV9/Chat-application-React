@@ -165,6 +165,8 @@ img{
   border:1px solid darkslategray;
   height:478px;
   width:400px;
+  background-color: white;
+  z-index: 999 !important;
 }
 
 .allheader{
@@ -194,4 +196,14 @@ img{
 .allconctacs{
   height: 420px;
   overflow: auto;
+}
+
+.user0{
+  background-image: url("https://i.pinimg.com/originals/41/b2/da/41b2da066769cf59ac72cb9f40caeddb.gif");
+  height: 100vh;
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top:1px solid black;
+  border-bottom:1px solid black; ;
 }
