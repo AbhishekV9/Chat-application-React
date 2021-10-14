@@ -32,6 +32,7 @@ export default function rootReducer(state=initialState,action){
                 timestamps:action.timestamps
             }
             const cont=state.contacts.map(contact => ({...contact}));
+            console.log(".lk[kpoom",cont[action.user.id-1]);
             cont[action.user.id-1].chats.push(newObj);
             return{
                 ...state,

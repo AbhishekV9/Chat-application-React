@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
+
+import contacts from '../utils/contacts';
+import {addContacts} from '../action';
 
 function userCard(props){
+    console.log("dsdsdsd",props);
+    const handleClick=()=>{
+        props.dispatch(addContacts(contacts));
+    }
     const {user}=props;
     const length=user.chats.length-1;
     const link=`/user${user.id}`
     return(
-       <Link to={link} style={{ textDecoration: 'none' }} >
+       <Link to={link} style={{ textDecoration: 'none' }} onClick={handleClick} >
             <div className="flex w-100 h-60px userCard p3">
             <div className="w-20 p1">
                 <div className="profile-picture">
@@ -28,4 +36,13 @@ function userCard(props){
 
 }
 
-export default userCard;
+function mapStateToProps(state){
+    return{
+
+    }
+}
+
+const connectedComponent=connect(mapStateToProps)(userCard);
+
+
+export default connectedComponent;
