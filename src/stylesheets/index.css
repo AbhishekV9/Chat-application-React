@@ -78,7 +78,7 @@ img{
 }
 
 .leftsidebar{
-  border:1px solid lightslategray;  
+  border:1px solid white;  
   height:100vh;
 }
 
@@ -101,7 +101,6 @@ img{
 .personalInfo{
   height:65px;
   background-image: linear-gradient(#C9D6FF,#E2E2E2);
-  
   position: relative;
 }
 
@@ -225,6 +224,8 @@ img{
   height:67px;
   background-image: linear-gradient(#C9D6FF,#E2E2E2);
   position: relative;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
 }
 
 .current_user{
