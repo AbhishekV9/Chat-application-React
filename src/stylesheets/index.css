@@ -315,3 +315,27 @@ img{
   border-style: solid;
   border-color: transparent grey transparent transparent;
  }
+
+ .sendbox img{
+   height:45px;
+   width: 45px;
+   margin-top: 2px;
+   border-radius: 50%;
+ }
+
+ .ipbox{
+   width:900px;
+ }
+
+ .ipbox input{
+   width:98%;
+   height: 90%;
+   margin-top: 5px;
+   margin-left: 10px;
+ }
+
+ .sendbox{
+   position: absolute;
+   bottom:15px;
+ }
+ 

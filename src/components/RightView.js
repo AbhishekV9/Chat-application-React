@@ -56,13 +56,16 @@ function RightView(props){
                           })}
                       </div>
                       }
-                    <div className="chatbox">
-
-                    </div>
                 </div>
               </div>
               <div>
                 { showConvo && <CreateConvo setConvo={setConvo} /> }
+              </div>
+              <div className="sendbox">
+                    <div className="flex">
+                      <div className="ipbox"><input placeholder="type message ... "/></div>
+                      <div className="sendimg"><img src="https://cdn-icons.flaticon.com/png/512/4980/premium/4980385.png?token=exp=1634209433~hmac=4173e5ab944b3654536511f3c6c67066"/></div>
+                    </div>
               </div>
             </div>}           
       </div>
