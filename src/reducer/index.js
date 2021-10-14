@@ -1,4 +1,4 @@
-import { ADD_CONTACTS,FILTER_CONTACTS } from "../action/actionTypes";
+import { ADD_CONTACTS,FILTER_CONTACTS,SEND_MESSAGE} from "../action/actionTypes";
 
 
 const initialState={
@@ -23,6 +23,19 @@ export default function rootReducer(state=initialState,action){
             return{
                 ...state,
                 contacts:action.contacts
+            }
+        }
+        case SEND_MESSAGE:{
+            const newObj={
+                message:action.message,
+                sender:"self",
+                timestamps:action.timestamps
+            }
+            const cont=state.contacts.map(contact => ({...contact}));
+            cont[action.user.id-1].chats.push(newObj);
+            return{
+                ...state,
+                contacts:cont
             }
         }
         default:
