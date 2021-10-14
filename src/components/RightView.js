@@ -14,6 +14,15 @@ function RightView(props){
            </div>: 
            <div className="otherUsers">
               <div>
+                <div className="chat_header">
+                    <span  className="current_user"> <img src= {user.photo} alt="profile"/></span>
+                    <span className="current_user" >{user.userName}</span>
+                </div>
+                <div>
+
+                </div>
+              </div>
+              <div>
                 { showConvo && <CreateConvo setConvo={setConvo} /> }
               </div>
             </div>}           

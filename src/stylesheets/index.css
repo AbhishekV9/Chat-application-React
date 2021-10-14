@@ -66,7 +66,8 @@ img{
 }
 
 .username{
-  font-weight: 600;
+  font-weight: 400;
+  font-size: large;
   color: black;
 }
 
@@ -99,7 +100,8 @@ img{
 
 .personalInfo{
   height:65px;
-  background-color: mediumseagreen;
+  background-image: linear-gradient(#C9D6FF,#E2E2E2);
+  
   position: relative;
 }
 
@@ -124,8 +126,8 @@ img{
   margin-left:15px ;
 }
 .logInuser{
-  font-weight: 600;
-  font-size: large;
+  font-weight: 400;
+  font-size: larger;
   padding: 10px;
 }
 .logInuser img{
@@ -216,6 +218,24 @@ img{
   background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
-  border-top:1px solid black;
-  border-bottom:1px solid black; 
+ 
+}
+
+.chat_header{
+  height:67px;
+  background-image: linear-gradient(#C9D6FF,#E2E2E2);
+  position: relative;
+}
+
+.current_user{
+  font-weight: 400;
+  font-size: larger;
+  padding: 10px;
+}
+.current_user img{
+  height:50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 5px;
+  object-fit: cover;
 }
