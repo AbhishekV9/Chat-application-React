@@ -24,7 +24,7 @@ function RightView(props){
                       <div className="messages">
                           {user.chats.map((chat)=>{
                             return( 
-                            <div className="convo">
+                            <div className="tip">
                               {chat.sender=== "self" ?
                                 <div className="chatbox">
                                   <span className="flex b1">     
@@ -35,11 +35,19 @@ function RightView(props){
                                 </div>
                               :
                                 <div>
-                                  <span className="current_user"><img src={user.photo} alt="user pic"/></span>
-                                  <span>
-                                    <span>{chat.message}</span>
-                                    <span>{chat.timestamps}</span>
-                                  </span>
+                                  {/* <span className="current_user"><img src={user.photo} alt="user pic"/></span>
+                                  <span className="b1">
+                                    <span className="mes">{chat.message}</span>
+                                    <span className="time">{chat.timestamps}</span>
+                                  </span> */}
+                                  <div className="chatboxx">
+                                  <span className="current_user fd"><img src={user.photo} alt="user pic"/></span>
+                                    <span className="flex b2">     
+                                      <div className="mes" ><p>{chat.message}</p></div>                              
+                                      <div className="time"><p>{chat.timestamps}</p></div>                                   
+                                    </span>
+                                    
+                                  </div>
                                 </div>                             
                               }
                                 

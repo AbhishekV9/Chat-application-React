@@ -286,3 +286,32 @@ img{
  .convo{
    margin-top: 10px;
  }
+
+ .tip{
+   margin-top: 10px;
+ }
+
+ .chatboxx{
+  display: flex;
+  height:50px;
+  position: relative;
+}
+
+.b2{
+  border:1px solid grey;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+.b2::after{
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent grey transparent transparent;
+ }

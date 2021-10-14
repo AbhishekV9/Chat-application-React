@@ -5,6 +5,7 @@ function createConvo(props){
 
     const {setConvo}=props;
     const handleClose= () =>{
+        console.log("sdsdsds")
         setConvo(false);
     }
     return(
