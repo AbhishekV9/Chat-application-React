@@ -5,9 +5,12 @@ import contacts from '../utils/contacts';
 import {addContacts} from '../action';
 
 function userCard(props){
-    console.log("dsdsdsd",props);
+    const{setValue,dispatch}=props;
     const handleClick=()=>{
-        props.dispatch(addContacts(contacts));
+        dispatch(addContacts(contacts));      
+        if(setValue){
+            setValue("");
+        }
     }
     const {user}=props;
     const length=user.chats.length-1;
@@ -38,7 +41,7 @@ function userCard(props){
 
 function mapStateToProps(state){
     return{
-
+        ...state
     }
 }
 

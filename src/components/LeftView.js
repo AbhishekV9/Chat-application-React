@@ -39,7 +39,7 @@ import {filter} from '../action';
                 <span className="logInuser phone" >{props.loggedInUser.phoneNo}</span>
             </div>
             <div className="searchbar">
-                <input type="text" placeholder="   Search.. " name="search" onChange={handleChange}/>
+                <input type="text" placeholder="   Search.. " name="search" onChange={handleChange} value={searchbar}/>
                 <span  className="icon" >
                     <img src="https://cdn-icons-png.flaticon.com/512/751/751463.png" alt="search" />
                 </span>
@@ -54,10 +54,10 @@ import {filter} from '../action';
             </div>
             <div className="scroll">
                 {contacts.length <9 ? contacts.map((user=>{
-                    return <UserCard user={user} key={ user.id} />
+                    return <UserCard user={user} key={ user.id} setValue={setValue} />
                 })):
                 contacts.map((user)=>(
-                    user.chats.length >0 ? <UserCard user={user} key={user.id} /> : null   
+                    user.chats.length >0 ? <UserCard user={user} key={user.id} setValue={setValue} /> : null   
                 ))}
             </div>
            

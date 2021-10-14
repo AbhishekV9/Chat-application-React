@@ -25,7 +25,7 @@ function RightView(props){
     const handleSubmit=()=>{
       const timestamps=formatAMPM(new Date());
       dispatch(sendMessage(user,message,timestamps));
-      setMessage(" ");
+      setMessage("");
     }
     return(
       <div>
@@ -41,28 +41,28 @@ function RightView(props){
                     <span  className="current_user"> <img src= {user.photo} alt="profile"/></span>
                     <span className="current_user" >{user.userName}</span>
                 </div>
-                <div>
+                <div className="complete_convo">
                      {user.chats.length===0 ? null :
                       <div className="messages">
-                          {user.chats.map((chat)=>{
+                          {user.chats.map((chat,index)=>{
                             return( 
-                            <div className="tip">
+                            <div className="tip" key={index}>
                               {chat.sender=== "self" ?
                                 <div className="chatbox">
-                                  <span className="flex b1">     
+                                  <div className="flex b1">     
                                     <div className="mes" ><p>{chat.message}</p></div>                              
                                     <div className="time"><p>{chat.timestamps}</p></div>                                   
-                                  </span>
+                                  </div>
                                   <span className="current_user fd"><img src={loggedInUser.img} alt="my pic"/></span>
                                 </div>
                               :
                                 <div>
                                   <div className="chatboxx">
                                   <span className="current_user fd"><img src={user.photo} alt="user pic"/></span>
-                                    <span className="flex b2">     
+                                    <div className="flex b2">     
                                       <div className="mes" ><p>{chat.message}</p></div>                              
                                       <div className="time"><p>{chat.timestamps}</p></div>                                   
-                                    </span>
+                                    </div>
                                     
                                   </div>
                                 </div>                             
