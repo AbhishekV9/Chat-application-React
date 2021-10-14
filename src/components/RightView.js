@@ -1,9 +1,10 @@
+import { connect } from 'react-redux';
 
 import CreateConvo from './CreateConvo'
 
 function RightView(props){
-    const { showConvo,setConvo,user}=props;
-    console.log("props",user);
+    const { showConvo,setConvo,user,loggedInUser}=props;
+    console.log("propsssdsds",props);
     return(
       <div>
            {user.id===0 ? 
@@ -19,7 +20,37 @@ function RightView(props){
                     <span className="current_user" >{user.userName}</span>
                 </div>
                 <div>
+                     {user.chats.length===0 ? null :
+                      <div className="messages">
+                          {user.chats.map((chat)=>{
+                            return( 
+                            <div className="convo">
+                              {chat.sender=== "self" ?
+                                <div className="chatbox">
+                                  <span className="flex b1">     
+                                    <div className="mes" ><p>{chat.message}</p></div>                              
+                                    <div className="time"><p>{chat.timestamps}</p></div>                                   
+                                  </span>
+                                  <span className="current_user fd"><img src={loggedInUser.img} alt="my pic"/></span>
+                                </div>
+                              :
+                                <div>
+                                  <span className="current_user"><img src={user.photo} alt="user pic"/></span>
+                                  <span>
+                                    <span>{chat.message}</span>
+                                    <span>{chat.timestamps}</span>
+                                  </span>
+                                </div>                             
+                              }
+                                
+                            </div>
+                            )
+                          })}
+                      </div>
+                      }
+                    <div className="chatbox">
 
+                    </div>
                 </div>
               </div>
               <div>
@@ -30,4 +61,12 @@ function RightView(props){
     )
 }
 
-export default RightView;
+function mapStatetoprops(state){
+  return{
+    loggedInUser:state.loggedInUser
+  }
+}
+
+const connectedComponent=connect(mapStatetoprops)(RightView);
+
+export default connectedComponent;
