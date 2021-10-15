@@ -28,7 +28,7 @@ function RightView(props){
       setMessage("");
     }
     return(
-      <div>
+      <div className="rightSide">
            {user.id===0 ? 
            <div className="user0">
               <div>

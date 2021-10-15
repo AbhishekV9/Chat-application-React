@@ -231,7 +231,6 @@ img{
 
 .chat_header{
   height:67px;
-  
   font-size: 17px;
   background-color: #155162;
   color: white;
@@ -354,12 +353,9 @@ img{
    margin-left: 10px;
    word-wrap: break-word;
    border: 1px solid rgb(146, 146, 146);
-  
-  
-  
-  border-radius: 1rem;
-  outline: none;
-  padding: 2px;
+   border-radius: 1rem;
+   outline: none;
+   padding: 2px;
  }
 
  .sendbox{
@@ -371,3 +367,52 @@ img{
    height:500px;
    overflow-y:auto;
  }
+
+ @media screen and (max-width:1024px) {
+    .w-30{
+      width: 40%;
+    }
+    
+    .w-70{
+      width: 60%;
+    }
+
+    .ipbox{
+      width:540px;
+    }
+    .complete_convo{
+      height: 590px;
+      overflow-y:auto;
+    }
+    
+    .scroll{
+      overflow: auto;
+      height:500px;
+    }
+ }
+
+ @media screen and (max-width:768px) {
+  .w-30{
+    width: 50%;
+  }
+  
+  .w-70{
+    width: 50%;
+  }
+
+  .ipbox{
+    width:330px;
+  }
+  .complete_convo{
+    height:600px;
+    overflow-y:auto;
+  }
+  
+  .scroll{
+    overflow: auto;
+    height:520px;
+  }
+  .personalInfo .phone{
+    display: none;
+  }
+}
