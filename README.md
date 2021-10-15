@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Frontend for a chat application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ ### Description: ######
+<ul>
+  <li>Assume you are a dummy logged in user.</li>
+  <li>Search : conversations are searchable by contact name.</li>
+   <li>Left sidebar:
+        <ol>
+        <li>Shows all the conversations created here</li>
+        <li>Each conversation has the contact name and some text of the last message in the chat</li>
+        </ol>
+  </li>
+  <li>Create conversation button:
+        <ol>
+        <li>On clicking this open a pop up and load all the contacts</li>
+        <li>On clicking the contact you can start a new conversation (if no conversation was previously started). Or open the existing conversation for that contact.</li>
+        </ol>
+  </li>
+  <li>Right side view:
+        <ol>
+        <li>Shows the current selected conversation messages</li>
+        <li>You can send a message in the conversation</li>
+        </ol>
+  </li>
+</ul>
 
-## Available Scripts
+### Screenshots: ######
 
-In the project directory, you can run:
+<h2>Home Page </h2>
+</br>
 
-### `npm start`
+<img src="https://github.com/AbhishekV9/Chat-application-React/blob/master/screenshots/homepage.png" />
+</br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h2>Conversation</h2>
+</br>
+<img src="https://github.com/AbhishekV9/Chat-application-React/blob/master/screenshots/conversation.jpg" />
+</br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h2>All Contacts </h2>
+</br>
+<img src="https://github.com/AbhishekV9/Chat-application-React/blob/master/screenshots/allContacts.jpg" />
+</br>
+</br>
 
-### `npm test`
+### Technologies Stack: ######
+<ul>
+ <li><a href="https://code.visualstudio.com/">Vs Code </a>- awesome web-based text editor </li>
+  <li><a href="https://reactjs.org/">Reactjs </a>- a JavaScript library for building user interfaces </li>
+  <li><a href="https://react-redux.js.org/">React-Redux </a>- for global state </li>
+  <li><a href="https://reactjs.org/docs/hooks-intro.html">React-Hooks </a>- let you use state and other React features without writing a class.</li>
+  <li><a href="https://getbootstrap.com/">BootStrap 5 </a>- awesome library for styling </li>
+  <li>etc </li>
+</ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Modules Used: ######
 
-### `npm run build`
+    "@testing-library/jest-dom": "^5.14.1",</br>
+    "@testing-library/react": "^11.2.7",</br>
+    "@testing-library/user-event": "^12.8.3",</br>
+    "bootstrap": "^5.1.3",</br>
+    "react": "^17.0.2",</br>
+    "react-bootstrap": "^1.6.4",</br>
+    "react-dom": "^17.0.2",</br>
+    "react-redux": "^7.2.5",</br>
+    "react-router-dom": "^5.3.0",</br>
+    "react-scripts": "4.0.3",</br>
+    "redux": "^4.1.1",</br>
+    "redux-logger": "^3.0.6",</br>
+    "redux-thunk": "^2.3.0",</br>
+    "web-vitals": "^1.1.2"
+ 
+ ### How to Install : ######
+ 
+Clone the project onto your local machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run 'npm install' to install required dependencies.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run 'npm start' to start the application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
