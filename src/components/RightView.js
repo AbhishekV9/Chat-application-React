@@ -95,7 +95,7 @@ function RightView(props){
               <div className="sendbox">
                     <div className="flex">
                       <div className="ipbox"><input placeholder="type message ... " onChange={handleChange} value={message}/></div>
-                      <div className="sendimg"><img src="https://cdn-icons.flaticon.com/png/512/4980/premium/4980385.png?token=exp=1634209433~hmac=4173e5ab944b3654536511f3c6c67066" alt="send" onClick={handleSubmit}/></div>
+                      <div className="sendimg"><img src="https://cdn-icons-png.flaticon.com/512/3814/3814305.png" alt="send" onClick={handleSubmit}/></div>
                     </div>
               </div>
             </div>}           

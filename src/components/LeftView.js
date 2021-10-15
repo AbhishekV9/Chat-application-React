@@ -50,7 +50,7 @@ import {filter} from '../action';
                          Create Conversation
                     </span>
                     <span className="add-img">
-                        <img src= "https://cdn-icons.flaticon.com/png/512/863/premium/863823.png?token=exp=1633960669~hmac=50fa37db1705b19d07a84546b7b68abc" onClick={changeShowConvo} alt="add"/>
+                        <img src= "https://cdn-icons-png.flaticon.com/512/1828/1828574.png" onClick={changeShowConvo} alt="add"/>
                     </span>
                 </div>
             </div>
