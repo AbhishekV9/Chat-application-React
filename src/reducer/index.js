@@ -1,6 +1,7 @@
+//importing action types
 import { ADD_CONTACTS,FILTER_CONTACTS,SEND_MESSAGE} from "../action/actionTypes";
 
-
+//giving initial state to the store
 const initialState={
     contacts:[],
     loggedInUser:{
@@ -11,6 +12,7 @@ const initialState={
     }
 }
 
+//changing store state on the basis of action type
 export default function rootReducer(state=initialState,action){
     switch(action.type){
         case ADD_CONTACTS:{

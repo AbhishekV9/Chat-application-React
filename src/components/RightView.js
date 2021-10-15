@@ -5,12 +5,18 @@ import CreateConvo from './CreateConvo'
 import { sendMessage } from '../action';
 
 function RightView(props){
+    //getting information from props
     const { showConvo,setConvo,user,loggedInUser,dispatch}=props;
+
+    //creating local state message from react hook useState
     const [message,setMessage] = useState("");
+    
+    //when text for message changes , this function is saves the text in local state by using setMessage
     const handleChange=(e)=>{
       setMessage(e.target.value);
     }
 
+    //this function is responsible for getting time in 12 hr format
     function formatAMPM(date) {
       var hours = date.getHours();
       var minutes = date.getMinutes();
@@ -22,15 +28,22 @@ function RightView(props){
       return strTime;
     }
 
+    //function called when we click on  send message 
     const handleSubmit=()=>{
+      //getting time
       const timestamps=formatAMPM(new Date());
+
+      //dispatching action to save the message in global store
       dispatch(sendMessage(user,message,timestamps));
+
+      //setting message value as empty again
       setMessage("");
     }
     return(
       <div className="rightSide">
            {user.id===0 ? 
            <div className="user0">
+             {/* createConvo is the all contacts pop up which you after clicking on create conversation icon */}
               <div>
                 { showConvo && <CreateConvo setConvo={setConvo} /> }
               </div>
@@ -75,6 +88,7 @@ function RightView(props){
                       }
                 </div>
               </div>
+               {/* createConvo is the all contacts pop up which you after clicking on create conversation icon */}
               <div>
                 { showConvo && <CreateConvo setConvo={setConvo} /> }
               </div>
@@ -89,12 +103,14 @@ function RightView(props){
     )
 }
 
+//returns the required data from global state
 function mapStatetoprops(state){
   return{
     loggedInUser:state.loggedInUser
   }
 }
 
+//using connect to connect this component to global store
 const connectedComponent=connect(mapStatetoprops)(RightView);
 
 export default connectedComponent;

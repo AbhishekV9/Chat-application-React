@@ -1,3 +1,4 @@
+//dummy data for this chat app UI
 const contacts= [
     {
         userName:"Ashish",

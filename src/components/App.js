@@ -12,8 +12,13 @@ import RightView from './RightView';
 
 function App(props) {
   
+  //creating local state showConvo  with react hook useState , showConvo is responsible for showing all the contacts when clicked on Create conversation icon  
   const [showConvo,setConvo] = useState(false);
+
+  //getting data from global store
   const {dispatch,user}=props;
+
+  //getting all the users from dummy data
   const user1=contacts[0];
   const user2=contacts[1];
   const user3=contacts[2];
@@ -28,18 +33,19 @@ function App(props) {
   const user12=contacts[11];
   const user13=contacts[12];
 
-
+ //dispatching action to add all contacts to the global store
   useEffect(()=>{
     dispatch(addContacts(contacts));
   },[dispatch])
   
   return (
+    //rendering right view and left view with required informations
     <div className="flex">
         <div className="w-30">
           <LeftView showConvo={showConvo} setConvo={setConvo}/>
         </div>
         <div className="w-70">
-          {/* <RightView showConvo={showConvo} setConvo={setConvo} /> */}
+    {/* using switch and Route for routing pupose */}
           <Switch>
             <Route 
               path='/'
@@ -243,6 +249,7 @@ function App(props) {
   );
 }
 
+//returns the required data from global state
 function mapStatetoprops(state){
   return{
     contacts:state.contacts,
@@ -250,6 +257,7 @@ function mapStatetoprops(state){
   }
 }
 
+//using connect to connect this component to global store
 const connectedComponent=connect(mapStatetoprops)(App);
 
 export default connectedComponent;
